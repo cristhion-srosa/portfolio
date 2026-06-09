@@ -237,7 +237,7 @@ export const translations: Record<Locale, Translation> = {
             "Implementei mais da metade de uma nova API pública com centenas de endpoints.",
             "Refatorei uma grande base AngularJS usando ESLint e Airbnb Style Guide.",
             "Conduzi funcionalidades desde o levantamento de requisitos e a pesquisa técnica até a implementação em uma plataforma essencial de planejamento.",
-            "Entreguei funcionalidades de ponta a ponta com Rails, Node.js, Firebase, MongoDB e React Native.",
+            "Entreguei funcionalidades end-to-end com Rails, Node.js, Firebase, MongoDB e React Native.",
           ],
           url: shared.experienceLinks.scopi,
         },
