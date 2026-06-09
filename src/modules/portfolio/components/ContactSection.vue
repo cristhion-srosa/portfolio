@@ -10,9 +10,23 @@ const { t } = useI18n();
     <p class="contact__index">{{ t.contact.index }} / CONTACT</p>
     <h2 id="contact-title">{{ t.contact.title }}</h2>
     <p class="contact__body">{{ t.contact.body }}</p>
-    <a class="contact__email" href="mailto:silvacristhion@gmail.com">
-      {{ t.contact.email }} <ArrowIcon />
-    </a>
+    <div class="contact__channels">
+      <a class="contact__channel" href="mailto:silvacristhion@gmail.com">
+        <span>{{ t.contact.email }}</span>
+        <small>silvacristhion@gmail.com</small>
+        <ArrowIcon />
+      </a>
+      <a
+        class="contact__channel"
+        href="https://wa.me/5551995019715"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span>{{ t.contact.whatsapp }}</span>
+        <small>+55 51 99501-9715</small>
+        <ArrowIcon />
+      </a>
+    </div>
     <div class="contact__socials">
       <span>{{ t.contact.socialLabel }}</span>
       <a
