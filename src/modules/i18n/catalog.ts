@@ -44,7 +44,7 @@ export const translations: Record<Locale, Translation> = {
     metrics: [
       { value: "85%", label: "lower average GraphQL query latency" },
       { value: "59%", label: "faster CI after Vitest migration" },
-      { value: "4+ yr", label: "shipping production software" },
+      { value: "5+ yr", label: "shipping production software" },
     ],
     work: {
       index: "01",
@@ -410,7 +410,7 @@ export const translations: Record<Locale, Translation> = {
         label: "de reducción en la latencia promedio de queries GraphQL",
       },
       { value: "59%", label: "de reducción en el tiempo de CI" },
-      { value: "4+ años", label: "entregando software en producción" },
+      { value: "5+ años", label: "entregando software en producción" },
     ],
     work: {
       index: "01",
