@@ -19,7 +19,10 @@ describe("translation catalog", () => {
       expect(translation.experience.items).toHaveLength(
         baseline.experience.items.length,
       );
-      expect(translation.about.stack).toEqual(baseline.about.stack);
+      expect(translation.about.stack).toHaveLength(baseline.about.stack.length);
+      expect(
+        translation.about.stack.map((group) => group.items.length),
+      ).toEqual(baseline.about.stack.map((group) => group.items.length));
     }
   });
 

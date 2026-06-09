@@ -53,7 +53,8 @@ export interface Translation {
     title: string;
     body: string[];
     stackLabel: string;
-    stack: string[];
+    stackIntro: string;
+    stack: Array<{ label: string; items: string[] }>;
     educationLabel: string;
     education: string;
   };
