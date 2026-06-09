@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from "@/modules/i18n/useI18n";
+import { stackLinks } from "@/modules/portfolio/stackLinks";
 import SectionHeading from "@/shared/SectionHeading.vue";
 
 const { t } = useI18n();
@@ -24,7 +25,17 @@ const { t } = useI18n();
             <h3>{{ group.label }}</h3>
           </header>
           <ul>
-            <li v-for="item in group.items" :key="item">{{ item }}</li>
+            <li v-for="item in group.items" :key="item">
+              <a
+                v-if="stackLinks[item]"
+                :href="stackLinks[item]"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {{ item }} <span aria-hidden="true">↗</span>
+              </a>
+              <span v-else>{{ item }}</span>
+            </li>
           </ul>
         </article>
       </div>
