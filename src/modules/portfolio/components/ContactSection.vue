@@ -11,9 +11,9 @@ const { t } = useI18n();
     <h2 id="contact-title">{{ t.contact.title }}</h2>
     <p class="contact__body">{{ t.contact.body }}</p>
     <div class="contact__channels">
-      <a class="contact__channel" href="mailto:silvacristhion@gmail.com">
+      <a class="contact__channel" href="mailto:cristhion@cristhion.dev">
         <span>{{ t.contact.email }}</span>
-        <small>silvacristhion@gmail.com</small>
+        <small>cristhion@cristhion.dev</small>
         <ArrowIcon />
       </a>
       <a
