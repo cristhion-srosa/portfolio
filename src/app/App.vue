@@ -6,8 +6,10 @@ import ExperienceSection from "@/modules/portfolio/components/ExperienceSection.
 import HeroSection from "@/modules/portfolio/components/HeroSection.vue";
 import SiteHeader from "@/modules/portfolio/components/SiteHeader.vue";
 import WorkSection from "@/modules/portfolio/components/WorkSection.vue";
+import { useScrollReveal } from "@/shared/useScrollReveal";
 
 const { t } = useI18n();
+useScrollReveal();
 </script>
 
 <template>

@@ -18,6 +18,7 @@ const { t } = useI18n();
         v-for="(project, index) in t.work.projects"
         :key="project.name"
         class="project-card"
+        data-reveal
       >
         <div class="project-card__number">0{{ index + 1 }}</div>
         <div class="project-card__body">

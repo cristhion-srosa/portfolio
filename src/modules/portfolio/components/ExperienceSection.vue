@@ -18,6 +18,7 @@ const { t } = useI18n();
         v-for="(item, index) in t.experience.items"
         :key="item.company"
         class="timeline-item"
+        data-reveal
       >
         <div class="timeline-item__meta">
           <span>0{{ index + 1 }}</span>

@@ -7,10 +7,12 @@ const { t } = useI18n();
 
 <template>
   <section id="contact" class="contact" aria-labelledby="contact-title">
-    <p class="contact__index">{{ t.contact.index }} / CONTACT</p>
-    <h2 id="contact-title">{{ t.contact.title }}</h2>
-    <p class="contact__body">{{ t.contact.body }}</p>
-    <div class="contact__channels">
+    <p class="contact__index" data-reveal>
+      {{ t.contact.index }} / CONTACT
+    </p>
+    <h2 id="contact-title" data-reveal>{{ t.contact.title }}</h2>
+    <p class="contact__body" data-reveal>{{ t.contact.body }}</p>
+    <div class="contact__channels" data-reveal>
       <a class="contact__channel" href="mailto:cristhion@cristhion.dev">
         <span>{{ t.contact.email }}</span>
         <small>cristhion@cristhion.dev</small>
@@ -27,7 +29,7 @@ const { t } = useI18n();
         <ArrowIcon />
       </a>
     </div>
-    <div class="contact__socials">
+    <div class="contact__socials" data-reveal>
       <span>{{ t.contact.socialLabel }}</span>
       <a
         href="https://github.com/cristhion-srosa"
