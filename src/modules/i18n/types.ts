@@ -36,6 +36,7 @@ export interface Translation {
     intro: string;
     cta: string;
     secondaryCta: string;
+    resumeUrl: string;
     photoAlt: string;
     location: string;
   };
