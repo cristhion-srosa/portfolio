@@ -61,6 +61,7 @@ export interface Translation {
     title: string;
     body: string;
     email: string;
+    whatsapp: string;
     socialLabel: string;
   };
   footer: string;
