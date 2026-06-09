@@ -147,7 +147,7 @@ export const translations: Record<Locale, Translation> = {
     meta: {
       title: "Cristhion Rosa | Engenheiro de Software Full-stack",
       description:
-        "Engenheiro full-stack criando produtos web, mobile e APIs confiáveis.",
+        "Engenheiro full-stack que desenvolve produtos web, mobile e APIs confiáveis.",
     },
     nav: {
       work: "Projetos",
@@ -165,28 +165,31 @@ export const translations: Record<Locale, Translation> = {
       status: "Disponível para oportunidades internacionais",
       role: "Engenheiro de software full-stack",
       intro:
-        "Construo produtos críticos para o negócio, onde velocidade não pode comprometer confiabilidade, segurança ou arquitetura limpa.",
+        "Desenvolvo produtos essenciais para o negócio, sem abrir mão de confiabilidade, segurança e uma arquitetura bem estruturada.",
       cta: "Ver projetos",
       secondaryCta: "Baixar currículo",
       photoAlt: "Retrato de Cristhion Rosa",
-      location: "Brasil · Remoto para o mundo",
+      location: "Brasil · Trabalho remoto para qualquer lugar",
     },
     metrics: [
-      { value: "85%", label: "menos latência média em queries GraphQL" },
-      { value: "59%", label: "CI mais rápido após migração para Vitest" },
+      {
+        value: "85%",
+        label: "de redução na latência média de queries GraphQL",
+      },
+      { value: "59%", label: "de redução no tempo de CI" },
       { value: "4+ anos", label: "entregando software em produção" },
     ],
     work: {
       index: "01",
       title: "Projetos selecionados",
       intro:
-        "Produtos criados sob restrições reais: integridade dos dados, velocidade e facilidade de manutenção.",
+        "Produtos desenvolvidos para desafios reais: integridade dos dados, desempenho e facilidade de manutenção.",
       projects: [
         {
           name: "DB Data Migrator",
           eyebrow: "Ferramenta desktop de engenharia",
           description:
-            "Aplicativo de migração entre bancos com introspecção de schema, mapeamento inteligente, validação e monitoramento em tempo real.",
+            "Aplicativo para migrar dados entre bancos, com introspecção de schema, mapeamento inteligente, validação e monitoramento em tempo real.",
           technologies: ["Go 1.26", "Vue 3", "Wails", "MySQL", "PostgreSQL"],
           linkLabel: "Ver repositório",
           url: shared.projectLinks.migrator,
@@ -195,7 +198,7 @@ export const translations: Record<Locale, Translation> = {
           name: "Ozio Piscinas",
           eyebrow: "Plataforma web comercial",
           description:
-            "Site completo para uma empresa de piscinas, da implementação à otimização de desempenho e deploy.",
+            "Site completo para uma empresa de piscinas, do desenvolvimento à otimização de performance e deploy.",
           technologies: ["Next.js", "Performance web", "Deploy"],
           linkLabel: "Visitar site",
           url: shared.projectLinks.ozio,
@@ -206,7 +209,7 @@ export const translations: Record<Locale, Translation> = {
       index: "02",
       title: "Experiência",
       intro:
-        "Trabalhar em startups me ensinou a assumir o problema, questionar premissas e entregar a solução.",
+        "Trabalhar em startups me ensinou a assumir a responsabilidade pelo problema, questionar premissas e entregar a solução.",
       items: [
         {
           company: "Minha Visita",
@@ -214,11 +217,11 @@ export const translations: Record<Locale, Translation> = {
           period: "Nov 2024 — Atual",
           location: "Novo Hamburgo, Brasil · Híbrido",
           summary:
-            "Desenvolvimento de APIs para clientes e evolução da arquitetura backend de uma plataforma de gestão de equipes externas.",
+            "Desenvolvo APIs voltadas aos clientes e aprimoro a arquitetura backend de uma plataforma de gestão de equipes externas.",
           highlights: [
-            "Reduzi em cerca de 85% a latência média de queries GraphQL com cache por requisição e batching via microtasks.",
-            "Reduzi o tempo de CI em cerca de 59% com uma suíte E2E em Vitest e a migração dos testes unitários de Jest.",
-            "Liderei uma refatoração da arquitetura backend que melhorou consistência dos endpoints, segurança, manutenção e controle de regressões.",
+            "Reduzi em cerca de 85% a latência média das queries GraphQL com cache por requisição e batching via microtasks.",
+            "Reduzi em cerca de 59% o tempo de CI ao criar uma suíte de testes E2E com Vitest e migrar os testes unitários do Jest.",
+            "Liderei uma refatoração da arquitetura backend que melhorou a consistência dos endpoints, a segurança, a manutenção e o controle de regressões.",
             "Criei integrações que conectam fluxos de clientes ao Make e Zapier.",
           ],
           url: shared.experienceLinks.minhaVisita,
@@ -229,12 +232,12 @@ export const translations: Record<Locale, Translation> = {
           period: "Jan 2022 — Nov 2024",
           location: "Taquara, Brasil · Híbrido",
           summary:
-            "Entreguei recursos web, mobile e backend para uma plataforma de planejamento estratégico e execução operacional.",
+            "Entreguei funcionalidades web, mobile e backend em uma plataforma de planejamento estratégico e execução operacional.",
           highlights: [
             "Implementei mais da metade de uma nova API pública com centenas de endpoints.",
             "Refatorei uma grande base AngularJS usando ESLint e Airbnb Style Guide.",
-            "Conduzi recursos desde a descoberta de requisitos e pesquisa técnica até a implementação em uma plataforma crítica de planejamento.",
-            "Entreguei recursos ponta a ponta com Rails, Node.js, Firebase, MongoDB e React Native.",
+            "Conduzi funcionalidades desde o levantamento de requisitos e a pesquisa técnica até a implementação em uma plataforma essencial de planejamento.",
+            "Entreguei funcionalidades de ponta a ponta com Rails, Node.js, Firebase, MongoDB e React Native.",
           ],
           url: shared.experienceLinks.scopi,
         },
@@ -245,7 +248,7 @@ export const translations: Record<Locale, Translation> = {
       title: "Engenharia com responsabilidade",
       body: [
         "Atuo em arquitetura backend, APIs para clientes, sistemas frontend, aplicativos mobile, testes e pipelines de entrega.",
-        "Meu melhor trabalho acontece em produtos onde precisão importa. Encontro a causa raiz, explicito o trade-off e deixo o código mais fácil de evoluir.",
+        "Faço meu melhor trabalho em produtos nos quais a precisão importa. Encontro a causa raiz, deixo o trade-off claro e preparo o código para evoluir.",
       ],
       stackLabel: "Ferramentas principais",
       stack: [
@@ -267,10 +270,10 @@ export const translations: Record<Locale, Translation> = {
     contact: {
       index: "04",
       title: "Vamos construir software que resiste.",
-      body: "Aberto a posições full-stack e backend com alto padrão de engenharia e problemas de produto relevantes.",
+      body: "Tenho interesse em vagas full-stack e de backend com padrões sólidos de engenharia e desafios de produto relevantes.",
       email: "Iniciar conversa",
       whatsapp: "Conversar pelo WhatsApp",
-      socialLabel: "Encontre-me online",
+      socialLabel: "Outros canais",
     },
     footer: "Design e desenvolvimento por Cristhion Rosa.",
   },
@@ -278,7 +281,7 @@ export const translations: Record<Locale, Translation> = {
     meta: {
       title: "Cristhion Rosa | Ingeniero de Software Full-stack",
       description:
-        "Ingeniero full-stack que desarrolla productos web, móviles y APIs confiables.",
+        "Ingeniero full-stack que desarrolla productos web, mobile y APIs confiables.",
     },
     nav: {
       work: "Proyectos",
@@ -296,28 +299,31 @@ export const translations: Record<Locale, Translation> = {
       status: "Disponible para oportunidades internacionales",
       role: "Ingeniero de software full-stack",
       intro:
-        "Desarrollo productos críticos para el negocio, donde la velocidad no puede comprometer confiabilidad, seguridad ni una arquitectura limpia.",
+        "Desarrollo productos esenciales para el negocio sin resignar confiabilidad, seguridad ni una arquitectura sólida.",
       cta: "Ver proyectos",
       secondaryCta: "Descargar CV",
       photoAlt: "Retrato de Cristhion Rosa",
-      location: "Brasil · Remoto global",
+      location: "Brasil · Trabajo remoto para cualquier lugar",
     },
     metrics: [
-      { value: "85%", label: "menos latencia promedio en queries GraphQL" },
-      { value: "59%", label: "CI más rápido después de migrar a Vitest" },
+      {
+        value: "85%",
+        label: "de reducción en la latencia promedio de queries GraphQL",
+      },
+      { value: "59%", label: "de reducción en el tiempo de CI" },
       { value: "4+ años", label: "entregando software en producción" },
     ],
     work: {
       index: "01",
       title: "Proyectos seleccionados",
       intro:
-        "Productos desarrollados con restricciones reales: integridad de datos, velocidad y mantenibilidad.",
+        "Productos desarrollados para desafíos reales: integridad de datos, rendimiento y facilidad de mantenimiento.",
       projects: [
         {
           name: "DB Data Migrator",
           eyebrow: "Herramienta de ingeniería de escritorio",
           description:
-            "Aplicación de migración entre bases con introspección de esquemas, mapeo inteligente, validación y monitoreo en tiempo real.",
+            "Aplicación para migrar datos entre bases, con introspección de schemas, mapeo inteligente, validación y monitoreo en tiempo real.",
           technologies: ["Go 1.26", "Vue 3", "Wails", "MySQL", "PostgreSQL"],
           linkLabel: "Ver repositorio",
           url: shared.projectLinks.migrator,
@@ -337,7 +343,7 @@ export const translations: Record<Locale, Translation> = {
       index: "02",
       title: "Experiencia",
       intro:
-        "Los equipos de startups me enseñaron a asumir el problema, cuestionar supuestos y entregar la solución.",
+        "Trabajar en startups me enseñó a hacerme cargo del problema, cuestionar supuestos y entregar la solución.",
       items: [
         {
           company: "Minha Visita",
@@ -345,11 +351,11 @@ export const translations: Record<Locale, Translation> = {
           period: "Nov 2024 — Actualidad",
           location: "Novo Hamburgo, Brasil · Híbrido",
           summary:
-            "Desarrollo de APIs para clientes y evolución de la arquitectura backend de una plataforma de gestión de equipos externos.",
+            "Desarrollo APIs para clientes y mejoro la arquitectura backend de una plataforma de gestión de equipos de campo.",
           highlights: [
-            "Reduje cerca del 85% la latencia promedio de queries GraphQL con caché por petición y batching basado en microtasks.",
-            "Reduje cerca del 59% el tiempo de CI con una suite E2E en Vitest y la migración de tests unitarios desde Jest.",
-            "Lideré una refactorización de la arquitectura backend que mejoró la consistencia de endpoints, seguridad, mantenibilidad y control de regresiones.",
+            "Reduje cerca de un 85% la latencia promedio de las queries GraphQL con caché por request y batching mediante microtasks.",
+            "Reduje cerca de un 59% el tiempo de CI al crear una suite de tests E2E con Vitest y migrar los tests unitarios desde Jest.",
+            "Lideré una refactorización de la arquitectura backend que mejoró la consistencia de los endpoints, la seguridad, el mantenimiento y el control de regresiones.",
             "Creé integraciones que conectan flujos de clientes con Make y Zapier.",
           ],
           url: shared.experienceLinks.minhaVisita,
@@ -360,12 +366,12 @@ export const translations: Record<Locale, Translation> = {
           period: "Ene 2022 — Nov 2024",
           location: "Taquara, Brasil · Híbrido",
           summary:
-            "Entregué funciones web, móviles y backend para una plataforma de planificación estratégica y ejecución operativa.",
+            "Entregué funcionalidades web, mobile y backend para una plataforma de planificación estratégica y ejecución operativa.",
           highlights: [
             "Implementé más de la mitad de una nueva API pública con cientos de endpoints.",
             "Refactoricé una gran base AngularJS usando ESLint y Airbnb Style Guide.",
-            "Lideré funcionalidades desde el descubrimiento de requisitos y la investigación técnica hasta su implementación en una plataforma crítica de planificación.",
-            "Entregué funciones completas con Rails, Node.js, Firebase, MongoDB y React Native.",
+            "Me ocupé de funcionalidades desde el relevamiento de requisitos y la investigación técnica hasta su implementación en una plataforma esencial de planificación.",
+            "Entregué funcionalidades de punta a punta con Rails, Node.js, Firebase, MongoDB y React Native.",
           ],
           url: shared.experienceLinks.scopi,
         },
@@ -375,8 +381,8 @@ export const translations: Record<Locale, Translation> = {
       index: "03",
       title: "Ingeniería con responsabilidad",
       body: [
-        "Trabajo en arquitectura backend, APIs para clientes, sistemas frontend, aplicaciones móviles, tests y pipelines de entrega.",
-        "Mi mejor trabajo ocurre en productos donde la precisión importa. Encuentro la causa raíz, hago explícito el trade-off y dejo el código más fácil de cambiar.",
+        "Trabajo en arquitectura backend, APIs para clientes, sistemas frontend, aplicaciones mobile, tests y pipelines de entrega.",
+        "Hago mi mejor trabajo en productos donde la precisión importa. Encuentro la causa raíz, dejo claro el trade-off y preparo el código para evolucionar.",
       ],
       stackLabel: "Herramientas principales",
       stack: [
@@ -398,10 +404,10 @@ export const translations: Record<Locale, Translation> = {
     contact: {
       index: "04",
       title: "Construyamos software que perdure.",
-      body: "Busco posiciones full-stack y backend con estándares sólidos de ingeniería y problemas de producto relevantes.",
-      email: "Iniciar conversación",
-      whatsapp: "Escribir por WhatsApp",
-      socialLabel: "Encontrame online",
+      body: "Busco puestos full-stack y de backend con estándares sólidos de ingeniería y desafíos de producto relevantes.",
+      email: "Hablemos",
+      whatsapp: "Escribime por WhatsApp",
+      socialLabel: "Otros canales",
     },
     footer: "Diseño y desarrollo por Cristhion Rosa.",
   },
