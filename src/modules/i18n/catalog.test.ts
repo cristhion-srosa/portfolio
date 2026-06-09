@@ -30,4 +30,16 @@ describe("translation catalog", () => {
       }
     }
   });
+
+  it("keeps regional language markers in localized catalogs", () => {
+    const portuguese = translations["pt-BR"];
+    const spanish = translations["es-AR"];
+
+    expect(portuguese.nav.experience).toBe("Experiência");
+    expect(portuguese.about.educationLabel).toBe("Formação");
+    expect(spanish.contact.whatsapp).toBe("Escribime por WhatsApp");
+    expect(spanish.experience.items[1]?.highlights.join(" ")).toContain(
+      "relevamiento",
+    );
+  });
 });
