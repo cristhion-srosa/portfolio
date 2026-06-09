@@ -9,8 +9,10 @@ const { t } = useI18n();
 <template>
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__copy">
-      <p class="status"><span />{{ t.hero.status }}</p>
-      <p class="hero__role">{{ t.hero.role }}</p>
+      <div class="hero__meta">
+        <p class="status"><span />{{ t.hero.status }}</p>
+        <p class="hero__role">{{ t.hero.role }}</p>
+      </div>
       <h1 id="hero-title">Cristhion<br /><em>Rosa</em></h1>
       <p class="hero__intro">{{ t.hero.intro }}</p>
       <div class="hero__actions">
