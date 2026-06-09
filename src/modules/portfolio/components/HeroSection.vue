@@ -16,10 +16,10 @@ const { t } = useI18n();
       <h1 id="hero-title">Cristhion<br /><em>Rosa</em></h1>
       <p class="hero__intro">{{ t.hero.intro }}</p>
       <div class="hero__actions">
-        <a class="button button--primary" href="#work">
+        <a class="button button--primary" :href="t.hero.resumeUrl" download>
           {{ t.hero.cta }} <ArrowIcon />
         </a>
-        <a class="text-link" :href="t.hero.resumeUrl" download>
+        <a class="text-link" href="#work">
           {{ t.hero.secondaryCta }}
         </a>
       </div>

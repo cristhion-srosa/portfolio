@@ -35,8 +35,8 @@ export const translations: Record<Locale, Translation> = {
       role: "Full-stack software engineer",
       intro:
         "I build business-critical products where speed cannot compromise reliability, security, or clean architecture.",
-      cta: "View selected work",
-      secondaryCta: "Download resume",
+      cta: "Download resume",
+      secondaryCta: "View selected work",
       resumeUrl: "/resume.pdf",
       photoAlt: "Portrait of Cristhion Rosa",
       location: "Brazil · Remote worldwide",
@@ -215,8 +215,8 @@ export const translations: Record<Locale, Translation> = {
       role: "Engenheiro de software full-stack",
       intro:
         "Desenvolvo produtos essenciais para o negócio, sem abrir mão de confiabilidade, segurança e uma arquitetura bem estruturada.",
-      cta: "Ver projetos",
-      secondaryCta: "Baixar currículo",
+      cta: "Baixar currículo",
+      secondaryCta: "Ver projetos",
       resumeUrl: "/resume-pt-br.pdf",
       photoAlt: "Retrato de Cristhion Rosa",
       location: "Brasil · Trabalho remoto para qualquer lugar",
@@ -398,8 +398,8 @@ export const translations: Record<Locale, Translation> = {
       role: "Ingeniero de software full-stack",
       intro:
         "Desarrollo productos esenciales para el negocio sin resignar confiabilidad, seguridad ni una arquitectura sólida.",
-      cta: "Ver proyectos",
-      secondaryCta: "Descargar CV",
+      cta: "Descargar CV",
+      secondaryCta: "Ver proyectos",
       resumeUrl: "/resume-es-ar.pdf",
       photoAlt: "Retrato de Cristhion Rosa",
       location: "Brasil · Trabajo remoto para cualquier lugar",
