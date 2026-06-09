@@ -9,7 +9,7 @@ const { t } = useI18n();
 <template>
   <section id="about" class="section about">
     <SectionHeading :index="t.about.index" :title="t.about.title" />
-    <div class="stack-showcase">
+    <div class="stack-showcase" data-reveal>
       <header class="stack-showcase__header">
         <p class="eyebrow">{{ t.about.stackLabel }}</p>
         <p>{{ t.about.stackIntro }}</p>
@@ -19,6 +19,7 @@ const { t } = useI18n();
           v-for="(group, index) in t.about.stack"
           :key="group.label"
           class="stack-group"
+          data-reveal
         >
           <header>
             <span>0{{ index + 1 }}</span>
@@ -40,7 +41,7 @@ const { t } = useI18n();
         </article>
       </div>
     </div>
-    <div class="about__grid">
+    <div class="about__grid" data-reveal>
       <div class="about__copy">
         <p v-for="paragraph in t.about.body" :key="paragraph">{{ paragraph }}</p>
       </div>
