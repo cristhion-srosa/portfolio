@@ -87,6 +87,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Reduced average GraphQL query latency by about 85% using request caching and microtask-based batching.",
             "Cut CI time by about 59% by creating a Vitest E2E suite and migrating unit tests from Jest.",
+            "Led a backend architecture refactor that improved endpoint consistency, security, maintainability, and regression control.",
             "Built integrations that connect customer workflows to Make and Zapier.",
           ],
           url: shared.experienceLinks.minhaVisita,
@@ -101,6 +102,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Implemented more than half of a new public API containing hundreds of endpoints.",
             "Refactored a large AngularJS codebase around ESLint and the Airbnb Style Guide.",
+            "Owned features from requirement discovery and technical research through implementation across a business-critical planning platform.",
             "Delivered features end to end across Rails, Node.js, Firebase, MongoDB, and React Native.",
           ],
           url: shared.experienceLinks.scopi,
@@ -215,6 +217,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Reduzi em cerca de 85% a latência média de queries GraphQL com cache por requisição e batching via microtasks.",
             "Reduzi o tempo de CI em cerca de 59% com uma suíte E2E em Vitest e a migração dos testes unitários de Jest.",
+            "Liderei uma refatoração da arquitetura backend que melhorou consistência dos endpoints, segurança, manutenção e controle de regressões.",
             "Criei integrações que conectam fluxos de clientes ao Make e Zapier.",
           ],
           url: shared.experienceLinks.minhaVisita,
@@ -229,6 +232,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Implementei mais da metade de uma nova API pública com centenas de endpoints.",
             "Refatorei uma grande base AngularJS usando ESLint e Airbnb Style Guide.",
+            "Conduzi recursos desde a descoberta de requisitos e pesquisa técnica até a implementação em uma plataforma crítica de planejamento.",
             "Entreguei recursos ponta a ponta com Rails, Node.js, Firebase, MongoDB e React Native.",
           ],
           url: shared.experienceLinks.scopi,
@@ -343,6 +347,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Reduje cerca del 85% la latencia promedio de queries GraphQL con caché por petición y batching basado en microtasks.",
             "Reduje cerca del 59% el tiempo de CI con una suite E2E en Vitest y la migración de tests unitarios desde Jest.",
+            "Lideré una refactorización de la arquitectura backend que mejoró la consistencia de endpoints, seguridad, mantenibilidad y control de regresiones.",
             "Creé integraciones que conectan flujos de clientes con Make y Zapier.",
           ],
           url: shared.experienceLinks.minhaVisita,
@@ -357,6 +362,7 @@ export const translations: Record<Locale, Translation> = {
           highlights: [
             "Implementé más de la mitad de una nueva API pública con cientos de endpoints.",
             "Refactoricé una gran base AngularJS usando ESLint y Airbnb Style Guide.",
+            "Lideré funcionalidades desde el descubrimiento de requisitos y la investigación técnica hasta su implementación en una plataforma crítica de planificación.",
             "Entregué funciones completas con Rails, Node.js, Firebase, MongoDB y React Native.",
           ],
           url: shared.experienceLinks.scopi,
