@@ -1199,7 +1199,6 @@ h1 em {
   :lang(es-AR) .contact h2 {
     font-size: clamp(2.25rem, 8.5vw, 3rem);
   }
-
 }
 
 @media (hover: none) {
