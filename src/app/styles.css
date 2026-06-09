@@ -264,6 +264,7 @@ svg {
 }
 
 .status span {
+  flex: 0 0 0.65rem;
   width: 0.65rem;
   height: 0.65rem;
   border-radius: 50%;
