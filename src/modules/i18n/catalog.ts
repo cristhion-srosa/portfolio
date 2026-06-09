@@ -227,7 +227,7 @@ export const translations: Record<Locale, Translation> = {
         label: "de redução na latência média de queries GraphQL",
       },
       { value: "59%", label: "de redução no tempo de CI" },
-      { value: "4+ anos", label: "entregando software em produção" },
+      { value: "5+ anos", label: "entregando software em produção" },
     ],
     work: {
       index: "01",
