@@ -36,10 +36,19 @@ jobs:
       - name: Run quality checks
         run: npm run check
 
+      - name: Ensure Cloudflare Pages project exists
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create cristhion-portfolio --production-branch=master
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
       - name: Deploy production build
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=cristhion-portfolio --branch=master
+          command: pages deploy dist --project-name=cristhion-portfolio --branch=master --commit-dirty=true
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
