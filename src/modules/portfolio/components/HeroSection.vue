@@ -17,7 +17,7 @@ const { t } = useI18n();
         <a class="button button--primary" href="#work">
           {{ t.hero.cta }} <ArrowIcon />
         </a>
-        <a class="text-link" href="/resume.pdf" download>
+        <a class="text-link" :href="t.hero.resumeUrl" download>
           {{ t.hero.secondaryCta }}
         </a>
       </div>

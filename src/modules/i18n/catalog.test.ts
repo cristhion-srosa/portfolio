@@ -42,4 +42,10 @@ describe("translation catalog", () => {
       "relevamiento",
     );
   });
+
+  it("links each locale to its matching resume", () => {
+    expect(translations["en-US"].hero.resumeUrl).toBe("/resume.pdf");
+    expect(translations["pt-BR"].hero.resumeUrl).toBe("/resume-pt-br.pdf");
+    expect(translations["es-AR"].hero.resumeUrl).toBe("/resume-es-ar.pdf");
+  });
 });
