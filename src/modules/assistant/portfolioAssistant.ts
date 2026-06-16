@@ -10,6 +10,8 @@ export interface AssistantMessage {
 }
 
 export interface AssistantReply {
+  context: string[];
+  sessionId?: string;
   text: string;
   tools: string[];
   source: "local" | "remote";
@@ -17,10 +19,14 @@ export interface AssistantReply {
 
 interface ChatApiReply {
   answer?: string;
+  context?: string[];
+  sessionId?: string;
   tools?: string[];
 }
 
 export interface AskPortfolioAssistantOptions {
+  context?: string[];
+  sessionId?: string;
   turnstileToken?: string;
 }
 
@@ -61,6 +67,7 @@ function stackTools(t: Translation) {
 
 function contactAnswer({ locale }: AnswerContext): AssistantReply {
   return {
+    context: [],
     source: "local",
     tools: ["contact.lookup", "profile.links"],
     text:
@@ -75,6 +82,7 @@ function contactAnswer({ locale }: AnswerContext): AssistantReply {
 function stackAnswer({ and, locale, t }: AnswerContext): AssistantReply {
   const tools = stackTools(t);
   return {
+    context: [],
     source: "local",
     tools: ["stack.list", "profile.match"],
     text:
@@ -104,6 +112,7 @@ function projectsAnswer({ locale, t }: AnswerContext): AssistantReply {
     .join("\n");
 
   return {
+    context: [],
     source: "local",
     tools: ["projects.search", "projects.rank"],
     text:
@@ -121,6 +130,7 @@ function experienceAnswer({ locale, t }: AnswerContext): AssistantReply {
     .join("\n");
 
   return {
+    context: [],
     source: "local",
     tools: ["experience.search", "impact.extract"],
     text:
@@ -134,6 +144,7 @@ function experienceAnswer({ locale, t }: AnswerContext): AssistantReply {
 
 function resumeAnswer({ locale, t }: AnswerContext): AssistantReply {
   return {
+    context: [],
     source: "local",
     tools: ["resume.resolve", "locale.detect"],
     text:
@@ -147,6 +158,7 @@ function resumeAnswer({ locale, t }: AnswerContext): AssistantReply {
 
 function fallbackAnswer({ locale, t }: AnswerContext): AssistantReply {
   return {
+    context: [],
     source: "local",
     tools: ["profile.summary", "intent.fallback"],
     text:
@@ -215,7 +227,9 @@ export async function askPortfolioAssistant(
         question,
         locale,
         contextVersion: "portfolio-v1",
+        context: options.context,
         localTools: localReply.tools,
+        sessionId: options.sessionId,
         turnstileToken: options.turnstileToken,
       }),
     });
@@ -226,6 +240,8 @@ export async function askPortfolioAssistant(
     if (!data.answer) return localReply;
 
     return {
+      context: Array.isArray(data.context) ? data.context : [],
+      sessionId: data.sessionId,
       source: "remote",
       text: data.answer,
       tools: data.tools?.length ? data.tools : localReply.tools,

@@ -27,6 +27,8 @@ describe("askPortfolioAssistant", () => {
         ok: true,
         json: async () => ({
           answer: "Remote Groq answer",
+          context: ["q:What stack? | tools:stack.list"],
+          sessionId: "session-1",
           tools: ["mcp.route", "groq.chat"],
         }),
       }),
@@ -36,6 +38,8 @@ describe("askPortfolioAssistant", () => {
 
     expect(reply.source).toBe("remote");
     expect(reply.text).toBe("Remote Groq answer");
+    expect(reply.context).toEqual(["q:What stack? | tools:stack.list"]);
+    expect(reply.sessionId).toBe("session-1");
     expect(reply.tools).toEqual(["mcp.route", "groq.chat"]);
 
     vi.unstubAllGlobals();
@@ -57,6 +61,29 @@ describe("askPortfolioAssistant", () => {
 
     expect(JSON.parse(fetch.mock.calls[0]?.[1]?.body as string)).toMatchObject({
       turnstileToken: "turnstile-token",
+    });
+
+    vi.unstubAllGlobals();
+  });
+
+  it("sends compact context and session id when provided", async () => {
+    const fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        answer: "Remote answer",
+        tools: [],
+      }),
+    });
+    vi.stubGlobal("fetch", fetch);
+
+    await askPortfolioAssistant("And what changed there?", "en-US", {
+      context: ["q:What changed at Minha Visita? | focus:Minha Visita"],
+      sessionId: "session-1",
+    });
+
+    expect(JSON.parse(fetch.mock.calls[0]?.[1]?.body as string)).toMatchObject({
+      context: ["q:What changed at Minha Visita? | focus:Minha Visita"],
+      sessionId: "session-1",
     });
 
     vi.unstubAllGlobals();
