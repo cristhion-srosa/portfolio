@@ -69,7 +69,7 @@ export const translations: Record<Locale, Translation> = {
       empty: "Ask something about my work.",
       suggestions: [
         "Which backend work should I look at?",
-        "What changed at Minha Visita?",
+        "What stack do you use most?",
         "How can I contact you?",
       ],
     },
@@ -83,7 +83,7 @@ export const translations: Record<Locale, Translation> = {
           name: "Portfolio Chat",
           eyebrow: "AI portfolio assistant",
           description:
-            "An AI portfolio assistant that uses MCP-style tools to control answer context, keep compact session memory, hand off to Groq when available, and fall back deterministically when necessary, hosted on Cloudflare Workers.",
+            "An AI portfolio assistant that uses MCP-style tools to control answer context, keeps compact session memory, hands off to Groq when available, and falls back deterministically when necessary, hosted on Cloudflare Workers.",
           technologies: [
             "Cloudflare Workers",
             "TypeScript",
@@ -300,7 +300,7 @@ export const translations: Record<Locale, Translation> = {
       empty: "Pergunte algo sobre o meu trabalho.",
       suggestions: [
         "Qual trabalho backend devo ver?",
-        "O que mudou na Minha Visita?",
+        "Qual stack você mais usa?",
         "Como entro em contato?",
       ],
     },
@@ -531,7 +531,7 @@ export const translations: Record<Locale, Translation> = {
       empty: "Preguntá algo sobre mi trabajo.",
       suggestions: [
         "¿Qué trabajo backend debería mirar?",
-        "¿Qué cambió en Minha Visita?",
+        "¿Qué stack usás más?",
         "¿Cómo puedo ponerme en contacto?",
       ],
     },
