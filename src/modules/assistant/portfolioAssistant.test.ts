@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 import { askPortfolioAssistant } from "./portfolioAssistant";
 
 describe("askPortfolioAssistant", () => {
-  it("answers project questions from local tools when API is unavailable", async () => {
+  it("returns unavailable message when API is unavailable", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn().mockRejectedValue(new Error("network down")),
@@ -14,8 +14,8 @@ describe("askPortfolioAssistant", () => {
     );
 
     expect(reply.source).toBe("local");
-    expect(reply.tools).toContain("projects.search");
-    expect(reply.text).toContain("DB Data Migrator");
+    expect(reply.tools).toEqual(["chat.unavailable"]);
+    expect(reply.text).toContain("chat endpoint is unavailable");
 
     vi.unstubAllGlobals();
   });
@@ -28,6 +28,7 @@ describe("askPortfolioAssistant", () => {
         json: async () => ({
           answer: "Remote Groq answer",
           context: ["q:What stack? | tools:stack.list"],
+          mode: "model",
           sessionId: "session-1",
           tools: ["mcp.route", "groq.chat"],
         }),
@@ -41,6 +42,28 @@ describe("askPortfolioAssistant", () => {
     expect(reply.context).toEqual(["q:What stack? | tools:stack.list"]);
     expect(reply.sessionId).toBe("session-1");
     expect(reply.tools).toEqual(["mcp.route", "groq.chat"]);
+
+    vi.unstubAllGlobals();
+  });
+
+  it("uses Worker local answer when Groq is unavailable", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({
+          answer: "Local Worker answer",
+          mode: "local",
+          tools: ["hiring.fit"],
+        }),
+      }),
+    );
+
+    const reply = await askPortfolioAssistant("Why hire you?", "en-US");
+
+    expect(reply.source).toBe("local");
+    expect(reply.text).toBe("Local Worker answer");
+    expect(reply.tools).toEqual(["hiring.fit"]);
 
     vi.unstubAllGlobals();
   });
