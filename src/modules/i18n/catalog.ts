@@ -65,11 +65,11 @@ export const translations: Record<Locale, Translation> = {
       toolLabel: "Tool trace",
       error:
         "The remote chat endpoint did not answer, so I used the local portfolio tools.",
-      empty: "Ask something specific about Cristhion's work.",
+      empty: "Ask something about my work.",
       suggestions: [
         "Which backend work should I look at?",
         "What changed at Minha Visita?",
-        "How can I contact Cristhion?",
+        "How can I contact you?",
       ],
     },
     work: {
@@ -274,7 +274,7 @@ export const translations: Record<Locale, Translation> = {
       toolLabel: "Rastro das ferramentas",
       error:
         "O endpoint remoto não respondeu, então usei as ferramentas locais do portfólio.",
-      empty: "Pergunte algo específico sobre o trabalho do Cristhion.",
+      empty: "Pergunte algo sobre o meu trabalho.",
       suggestions: [
         "Qual trabalho backend devo ver?",
         "O que mudou na Minha Visita?",
@@ -483,11 +483,11 @@ export const translations: Record<Locale, Translation> = {
       toolLabel: "Rastro de herramientas",
       error:
         "El endpoint remoto no respondió, así que usé las herramientas locales del portfolio.",
-      empty: "Preguntá algo específico sobre el trabajo de Cristhion.",
+      empty: "Preguntá algo sobre mi trabajo.",
       suggestions: [
-        "Qué trabajo backend debería mirar?",
-        "Qué cambió en Minha Visita?",
-        "Cómo contacto a Cristhion?",
+        "¿Qué trabajo backend debería mirar?",
+        "¿Qué cambió en Minha Visita?",
+        "¿Cómo puedo ponerme en contacto?",
       ],
     },
     work: {
