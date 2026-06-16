@@ -10,7 +10,7 @@
   --inverse: #171714;
   --inverse-ink: #f1efe8;
   --scrollbar-track: color-mix(in srgb, var(--bg) 82%, transparent);
-  --scrollbar-thumb: color-mix(in srgb, var(--ink) 68%, var(--accent));
+  --scrollbar-thumb: var(--accent);
   --scrollbar-thumb-hover: var(--accent);
   --max-width: 1440px;
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
@@ -32,7 +32,7 @@
   --inverse: #f0eee6;
   --inverse-ink: #171714;
   --scrollbar-track: color-mix(in srgb, var(--bg) 74%, transparent);
-  --scrollbar-thumb: color-mix(in srgb, var(--ink) 58%, var(--accent));
+  --scrollbar-thumb: var(--accent);
   --scrollbar-thumb-hover: var(--accent);
 }
 
