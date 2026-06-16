@@ -136,10 +136,10 @@ svg {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  width: min(100%, var(--max-width));
+  width: 100%;
   min-height: 5.25rem;
-  margin: auto;
-  padding: 0 var(--gutter);
+  padding: 0
+    max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter)));
   background: color-mix(in srgb, var(--bg) 94%, transparent);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -147,13 +147,11 @@ svg {
 
 .site-header::after {
   position: absolute;
-  right: 50%;
+  right: 0;
   bottom: 0;
-  left: 50%;
+  left: 0;
   border-bottom: 1px solid var(--line);
   content: "";
-  transform: translateX(-50%);
-  width: 100vw;
 }
 
 .wordmark {
