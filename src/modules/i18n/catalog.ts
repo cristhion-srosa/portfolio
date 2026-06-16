@@ -22,6 +22,7 @@ export const translations: Record<Locale, Translation> = {
       work: "Selected work",
       experience: "Experience",
       about: "About",
+      chat: "Chat",
       contact: "Contact",
     },
     controls: {
@@ -48,9 +49,13 @@ export const translations: Record<Locale, Translation> = {
     ],
     assistant: {
       index: "AI",
-      title: "Ask the portfolio",
+      title: "Chat",
       intro:
-        "Local tools answer from portfolio data. A Cloudflare Worker can hand the same contract to Groq.",
+        "Ask about projects, backend work, stack, experience, resume, or contact. The chat is scoped to this portfolio.",
+      contextNote:
+        "It keeps compact context for the last 5 questions in this browser tab, then drops older questions from context.",
+      fallbackNote:
+        "If Groq or Turnstile fails, local portfolio tools answer with less wording and the same tool trace.",
       status: "MCP tools · Groq handoff",
       placeholder: "Projects, stack, experience, or contact",
       send: "Send",
@@ -223,6 +228,7 @@ export const translations: Record<Locale, Translation> = {
       work: "Projetos",
       experience: "Experiência",
       about: "Sobre",
+      chat: "Chat",
       contact: "Contato",
     },
     controls: {
@@ -252,10 +258,14 @@ export const translations: Record<Locale, Translation> = {
     ],
     assistant: {
       index: "IA",
-      title: "Chat do portfólio",
+      title: "Chat",
       intro:
-        "Ferramentas locais respondem com dados do portfólio. Um Worker da Cloudflare pode enviar o mesmo contrato ao Groq.",
-      status: "MCP local · Groq depois",
+        "Mande perguntas sobre projetos, backend, stack, experiência, currículo ou contato. Fora disso, ele corta o assunto.",
+      contextNote:
+        "Nesta aba, ele lembra um resumo das últimas 5 perguntas e esquece o que passou disso.",
+      fallbackNote:
+        "Se Groq ou Turnstile cair, as ferramentas locais respondem direto e mantém o mesmo stacktrace.",
+      status: "MCP local · Groq assume depois",
       placeholder: "Projetos, stack, experiência ou contato",
       send: "Enviar",
       reset: "Reiniciar chat",
@@ -427,6 +437,7 @@ export const translations: Record<Locale, Translation> = {
       work: "Proyectos",
       experience: "Experiencia",
       about: "Perfil",
+      chat: "Chat",
       contact: "Contacto",
     },
     controls: {
@@ -456,10 +467,14 @@ export const translations: Record<Locale, Translation> = {
     ],
     assistant: {
       index: "IA",
-      title: "Chat del portfolio",
+      title: "Chat",
       intro:
-        "Herramientas locales responden con datos del portfolio. Un Worker de Cloudflare puede enviar el mismo contrato a Groq.",
-      status: "MCP local · Groq luego",
+        "Preguntá por proyectos, backend, stack, experiencia, CV o contacto. Si salís de ese marco, te lo va a decir.",
+      contextNote:
+        "En esta pestaña guarda un resumen de las últimas 5 preguntas y descarta lo anterior.",
+      fallbackNote:
+        "Si Groq o Turnstile falla, contestan las herramientas locales con una respuesta más seca y el mismo rastro.",
+      status: "MCP local · Groq luego asume",
       placeholder: "Proyectos, stack, experiencia o contacto",
       send: "Enviar",
       reset: "Reiniciar chat",

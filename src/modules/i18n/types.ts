@@ -23,7 +23,13 @@ interface Project {
 
 export interface Translation {
   meta: { title: string; description: string };
-  nav: { work: string; experience: string; about: string; contact: string };
+  nav: {
+    work: string;
+    experience: string;
+    about: string;
+    chat: string;
+    contact: string;
+  };
   controls: {
     language: string;
     theme: string;
@@ -45,6 +51,8 @@ export interface Translation {
     index: string;
     title: string;
     intro: string;
+    contextNote: string;
+    fallbackNote: string;
     status: string;
     placeholder: string;
     send: string;

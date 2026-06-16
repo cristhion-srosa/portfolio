@@ -493,9 +493,9 @@ h1 em {
 
 .assistant {
   display: grid;
-  grid-template-columns: minmax(22rem, 0.8fr) minmax(32rem, 1fr);
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: stretch;
+  grid-template-columns: minmax(20rem, 0.72fr) minmax(34rem, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
   background:
     linear-gradient(
       90deg,
@@ -508,36 +508,56 @@ h1 em {
 
 .assistant__intro {
   display: grid;
-  grid-template-columns: 3.5rem minmax(0, 1fr);
-  gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: 1fr;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
   align-content: start;
   min-width: 0;
+  overflow: hidden;
 }
 
 .assistant__intro h2 {
-  max-width: 10ch;
+  max-width: 100%;
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(3rem, 4.65vw, 5rem);
+  font-size: clamp(3rem, 4.35vw, 4.7rem);
   font-weight: 400;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   line-height: 0.95;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
-.assistant__intro p:last-child {
+.assistant__summary {
   max-width: 35rem;
   margin: 1.5rem 0 0;
   color: var(--muted);
   font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.assistant__notes {
+  display: grid;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.assistant__notes li {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .assistant__shell {
   display: grid;
-  grid-template-rows: minmax(18rem, 26rem) auto auto;
+  grid-template-rows: minmax(30rem, 54svh) auto auto;
   min-width: 0;
-  width: min(100%, 46rem);
-  justify-self: end;
+  width: 100%;
+  justify-self: stretch;
   border: 1px solid var(--line);
   background: var(--bg);
   box-shadow: 0.8rem 0.8rem 0 var(--ink);
@@ -556,7 +576,7 @@ h1 em {
 .assistant-message {
   display: grid;
   gap: 0.45rem;
-  max-width: min(100%, 35rem);
+  max-width: min(100%, 46rem);
 }
 
 .assistant-message--user {

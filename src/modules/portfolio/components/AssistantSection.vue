@@ -26,6 +26,8 @@ const question = ref("");
 const isLoading = ref(false);
 const liveRegion = ref("");
 const messageList = ref<HTMLElement | null>(null);
+const conversationContext = ref<string[]>([]);
+const sessionId = ref<string | undefined>();
 
 const lastTools = computed(
   () =>
@@ -54,9 +56,13 @@ async function ask(nextQuestion = question.value) {
   await scrollToLatest();
 
   const reply = await askPortfolioAssistant(trimmed, locale.value, {
+    context: conversationContext.value,
+    sessionId: sessionId.value,
     turnstileToken: turnstileToken.value,
   });
   resetTurnstile();
+  conversationContext.value = reply.context;
+  sessionId.value = reply.sessionId;
   appendAssistantReply(reply);
   isLoading.value = false;
   liveRegion.value =
@@ -84,6 +90,8 @@ function reset() {
       "profile.summary",
     ]),
   ];
+  conversationContext.value = [];
+  sessionId.value = undefined;
   liveRegion.value = t.value.assistant.empty;
 }
 </script>
@@ -95,7 +103,11 @@ function reset() {
       <div>
         <p class="eyebrow">{{ t.assistant.status }}</p>
         <h2 id="assistant-title">{{ t.assistant.title }}</h2>
-        <p>{{ t.assistant.intro }}</p>
+        <p class="assistant__summary">{{ t.assistant.intro }}</p>
+        <ul class="assistant__notes" aria-label="Chat behavior">
+          <li>{{ t.assistant.contextNote }}</li>
+          <li>{{ t.assistant.fallbackNote }}</li>
+        </ul>
       </div>
     </div>
 

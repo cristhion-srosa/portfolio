@@ -23,6 +23,7 @@ const localeLabels: Record<Locale, string> = {
     </a>
 
     <nav id="primary-navigation" class="desktop-nav" aria-label="Primary navigation">
+      <a href="#assistant" @click="isMenuOpen = false">{{ t.nav.chat }}</a>
       <a href="#work" @click="isMenuOpen = false">{{ t.nav.work }}</a>
       <a href="#experience" @click="isMenuOpen = false">{{ t.nav.experience }}</a>
       <a href="#about" @click="isMenuOpen = false">{{ t.nav.about }}</a>
