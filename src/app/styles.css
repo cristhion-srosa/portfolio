@@ -9,6 +9,9 @@
   --accent-ink: #171714;
   --inverse: #171714;
   --inverse-ink: #f1efe8;
+  --scrollbar-track: color-mix(in srgb, var(--bg) 82%, transparent);
+  --scrollbar-thumb: color-mix(in srgb, var(--ink) 68%, var(--accent));
+  --scrollbar-thumb-hover: var(--accent);
   --max-width: 1440px;
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
   --display: "Archivo Black", Impact, sans-serif;
@@ -28,6 +31,9 @@
   --accent-ink: #171714;
   --inverse: #f0eee6;
   --inverse-ink: #171714;
+  --scrollbar-track: color-mix(in srgb, var(--bg) 74%, transparent);
+  --scrollbar-thumb: color-mix(in srgb, var(--ink) 58%, var(--accent));
+  --scrollbar-thumb-hover: var(--accent);
 }
 
 * {
@@ -37,6 +43,39 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
+}
+
+* {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.25rem solid transparent;
+  border-radius: 0;
+  background: linear-gradient(var(--scrollbar-thumb), var(--scrollbar-thumb))
+    padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+      var(--scrollbar-thumb-hover),
+      var(--scrollbar-thumb-hover)
+    )
+    padding-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 body {
