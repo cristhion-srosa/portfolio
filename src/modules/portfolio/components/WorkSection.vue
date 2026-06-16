@@ -32,6 +32,7 @@ const { t } = useI18n();
           </ul>
         </div>
         <a
+          v-if="project.url"
           class="project-card__link"
           :href="project.url"
           target="_blank"
@@ -39,6 +40,9 @@ const { t } = useI18n();
         >
           {{ project.linkLabel }} <ArrowIcon />
         </a>
+        <span v-else class="project-card__link project-card__link--soon">
+          {{ project.linkLabel }}
+        </span>
       </article>
     </div>
   </section>

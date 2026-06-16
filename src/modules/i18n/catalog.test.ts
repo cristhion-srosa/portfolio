@@ -29,6 +29,7 @@ describe("translation catalog", () => {
   it("uses secure external project URLs", () => {
     for (const locale of locales) {
       for (const project of translations[locale].work.projects) {
+        if (!project.url) continue;
         expect(project.url).toMatch(/^https:\/\//);
       }
     }

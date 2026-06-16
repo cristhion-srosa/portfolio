@@ -18,7 +18,7 @@ interface Project {
   description: string;
   technologies: string[];
   linkLabel: string;
-  url: string;
+  url?: string;
 }
 
 export interface Translation {

@@ -860,6 +860,10 @@ h1 em {
   text-transform: uppercase;
 }
 
+.project-card__link--soon {
+  color: var(--muted);
+}
+
 .project-card__link svg,
 .timeline-item__content h3 svg,
 .contact__channel svg {

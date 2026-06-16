@@ -111,6 +111,14 @@ export const translations: Record<Locale, Translation> = {
           linkLabel: "Visit live site",
           url: shared.projectLinks.ozio,
         },
+        {
+          name: "Coming soon",
+          eyebrow: "Next project",
+          description:
+            "A new project will be added here when it is ready to show.",
+          technologies: ["In progress"],
+          linkLabel: "Coming soon",
+        },
       ],
     },
     experience: {
@@ -334,6 +342,14 @@ export const translations: Record<Locale, Translation> = {
           linkLabel: "Visitar site",
           url: shared.projectLinks.ozio,
         },
+        {
+          name: "Em breve",
+          eyebrow: "Próximo projeto",
+          description:
+            "Um novo projeto vai entrar aqui quando estiver pronto para mostrar.",
+          technologies: ["Em andamento"],
+          linkLabel: "Em breve",
+        },
       ],
     },
     experience: {
@@ -556,6 +572,14 @@ export const translations: Record<Locale, Translation> = {
           technologies: ["Next.js", "Rendimiento web", "Despliegue"],
           linkLabel: "Visitar sitio",
           url: shared.projectLinks.ozio,
+        },
+        {
+          name: "Próximamente",
+          eyebrow: "Próximo proyecto",
+          description:
+            "Voy a sumar un nuevo proyecto acá cuando esté listo para mostrar.",
+          technologies: ["En progreso"],
+          linkLabel: "Próximamente",
         },
       ],
     },
