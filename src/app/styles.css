@@ -229,7 +229,8 @@ svg {
   min-height: 2.75rem;
   border: 1px solid var(--line);
   border-radius: 0;
-  background: transparent;
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--mono);
   font-size: 0.7rem;
   letter-spacing: 0.05em;
@@ -237,6 +238,11 @@ svg {
 
 .header-controls select {
   padding: 0 1.8rem 0 0.75rem;
+}
+
+select option {
+  background: var(--bg);
+  color: var(--ink);
 }
 
 .theme-toggle {
@@ -594,6 +600,7 @@ h1 em {
   padding: 0.85rem 1rem;
   border: 1px solid var(--line);
   background: var(--surface);
+  color: var(--ink);
   white-space: pre-line;
 }
 
@@ -636,7 +643,8 @@ h1 em {
   min-width: 0;
   min-height: 3.5rem;
   border: 0;
-  background: transparent;
+  background: var(--bg);
+  color: var(--ink);
   font: inherit;
 }
 
@@ -1286,7 +1294,8 @@ h1 em {
     min-height: 3.25rem;
     border: 1px solid var(--line);
     border-radius: 0;
-    background: transparent;
+    background: var(--bg);
+    color: var(--ink);
     font-family: var(--mono);
     font-size: 0.7rem;
     letter-spacing: 0.05em;
