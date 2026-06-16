@@ -83,7 +83,7 @@ export const translations: Record<Locale, Translation> = {
           name: "Portfolio Chat",
           eyebrow: "AI portfolio assistant",
           description:
-            "An AI portfolio assistant that answers questions with MCP-style local tools, compact session context, Groq handoff, and deterministic fallback on Cloudflare Workers.",
+            "An AI portfolio assistant that uses MCP-style tools to control answer context, keep compact session memory, hand off to Groq, and fall back deterministically on Cloudflare Workers.",
           technologies: [
             "Cloudflare Workers",
             "TypeScript",
@@ -306,7 +306,7 @@ export const translations: Record<Locale, Translation> = {
           name: "Portfolio Chat",
           eyebrow: "Assistente de IA do portfólio",
           description:
-            "Assistente de IA do portfólio que responde perguntas com ferramentas locais no estilo MCP, contexto compacto, handoff para Groq e fallback determinístico em Cloudflare Workers.",
+            "Assistente de IA que responde sobre meu portfólio usando ferramentas no estilo MCP para escolher o contexto certo, manter um resumo curto da conversa, chamar o Groq quando faz sentido e voltar para uma resposta local previsível no Cloudflare Workers.",
           technologies: [
             "Cloudflare Workers",
             "TypeScript",
@@ -529,7 +529,7 @@ export const translations: Record<Locale, Translation> = {
           name: "Portfolio Chat",
           eyebrow: "Asistente de IA del portfolio",
           description:
-            "Asistente de IA del portfolio que responde preguntas con herramientas locales estilo MCP, contexto compacto, handoff a Groq y fallback determinístico en Cloudflare Workers.",
+            "Asistente de IA que responde sobre mi portfolio usando herramientas estilo MCP para elegir el contexto correcto, guardar un resumen corto de la conversación, pasar a Groq cuando corresponde y volver a una respuesta local predecible en Cloudflare Workers.",
           technologies: [
             "Cloudflare Workers",
             "TypeScript",
