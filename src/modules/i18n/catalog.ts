@@ -3,6 +3,7 @@ import type { Locale, Translation } from "./types";
 const shared = {
   projectLinks: {
     ozio: "https://oziopiscinas.com.br/",
+    portfolioChat: "https://github.com/cristhion-srosa/portfolio-chat",
     migrator: "https://github.com/cristhion-srosa/db-migrator",
   },
   experienceLinks: {
@@ -78,6 +79,20 @@ export const translations: Record<Locale, Translation> = {
       intro:
         "Products built around real operational constraints: data integrity, speed, and maintainability.",
       projects: [
+        {
+          name: "Portfolio Chat",
+          eyebrow: "AI portfolio assistant",
+          description:
+            "An AI portfolio assistant that answers questions with MCP-style local tools, compact session context, Groq handoff, and deterministic fallback on Cloudflare Workers.",
+          technologies: [
+            "Cloudflare Workers",
+            "TypeScript",
+            "Groq",
+            "MCP tools",
+          ],
+          linkLabel: "View repository",
+          url: shared.projectLinks.portfolioChat,
+        },
         {
           name: "DB Data Migrator",
           eyebrow: "Desktop engineering tool",
@@ -288,6 +303,20 @@ export const translations: Record<Locale, Translation> = {
         "Produtos desenvolvidos para desafios reais: integridade dos dados, desempenho e facilidade de manutenção.",
       projects: [
         {
+          name: "Portfolio Chat",
+          eyebrow: "Assistente de IA do portfólio",
+          description:
+            "Assistente de IA do portfólio que responde perguntas com ferramentas locais no estilo MCP, contexto compacto, handoff para Groq e fallback determinístico em Cloudflare Workers.",
+          technologies: [
+            "Cloudflare Workers",
+            "TypeScript",
+            "Groq",
+            "Ferramentas MCP",
+          ],
+          linkLabel: "Ver repositório",
+          url: shared.projectLinks.portfolioChat,
+        },
+        {
           name: "DB Data Migrator",
           eyebrow: "Ferramenta desktop de engenharia",
           description:
@@ -496,6 +525,20 @@ export const translations: Record<Locale, Translation> = {
       intro:
         "Productos desarrollados para desafíos reales: integridad de datos, rendimiento y facilidad de mantenimiento.",
       projects: [
+        {
+          name: "Portfolio Chat",
+          eyebrow: "Asistente de IA del portfolio",
+          description:
+            "Asistente de IA del portfolio que responde preguntas con herramientas locales estilo MCP, contexto compacto, handoff a Groq y fallback determinístico en Cloudflare Workers.",
+          technologies: [
+            "Cloudflare Workers",
+            "TypeScript",
+            "Groq",
+            "Herramientas MCP",
+          ],
+          linkLabel: "Ver repositorio",
+          url: shared.projectLinks.portfolioChat,
+        },
         {
           name: "DB Data Migrator",
           eyebrow: "Herramienta de ingeniería de escritorio",
