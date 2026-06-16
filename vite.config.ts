@@ -10,6 +10,7 @@ export default defineConfig({
     },
   },
   test: {
+    exclude: ["chat-layer-mcp/**", "node_modules/**", "dist/**"],
     environment: "jsdom",
   },
 });

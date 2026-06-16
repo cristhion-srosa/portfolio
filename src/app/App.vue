@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from "@/modules/i18n/useI18n";
 import AboutSection from "@/modules/portfolio/components/AboutSection.vue";
+import AssistantSection from "@/modules/portfolio/components/AssistantSection.vue";
 import ContactSection from "@/modules/portfolio/components/ContactSection.vue";
 import ExperienceSection from "@/modules/portfolio/components/ExperienceSection.vue";
 import HeroSection from "@/modules/portfolio/components/HeroSection.vue";
@@ -18,6 +19,7 @@ useScrollReveal();
   <SiteHeader />
   <main id="main">
     <HeroSection />
+    <AssistantSection />
     <WorkSection />
     <ExperienceSection />
     <AboutSection />

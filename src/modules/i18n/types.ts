@@ -41,6 +41,21 @@ export interface Translation {
     location: string;
   };
   metrics: Array<{ value: string; label: string }>;
+  assistant: {
+    index: string;
+    title: string;
+    intro: string;
+    status: string;
+    placeholder: string;
+    send: string;
+    reset: string;
+    userLabel: string;
+    assistantLabel: string;
+    toolLabel: string;
+    error: string;
+    empty: string;
+    suggestions: string[];
+  };
   work: { index: string; title: string; intro: string; projects: Project[] };
   experience: {
     index: string;

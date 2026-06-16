@@ -46,6 +46,27 @@ export const translations: Record<Locale, Translation> = {
       { value: "59%", label: "faster CI after Vitest migration" },
       { value: "5+ yr", label: "shipping production software" },
     ],
+    assistant: {
+      index: "AI",
+      title: "Ask the portfolio",
+      intro:
+        "Local tools answer from portfolio data. A Cloudflare Worker can hand the same contract to Groq.",
+      status: "MCP tools · Groq handoff",
+      placeholder: "Projects, stack, experience, or contact",
+      send: "Send",
+      reset: "Reset chat",
+      userLabel: "You",
+      assistantLabel: "Assistant",
+      toolLabel: "Tool trace",
+      error:
+        "The remote chat endpoint did not answer, so I used the local portfolio tools.",
+      empty: "Ask something specific about Cristhion's work.",
+      suggestions: [
+        "Which backend work should I look at?",
+        "What changed at Minha Visita?",
+        "How can I contact Cristhion?",
+      ],
+    },
     work: {
       index: "01",
       title: "Selected work",
@@ -229,6 +250,27 @@ export const translations: Record<Locale, Translation> = {
       { value: "59%", label: "de redução no tempo de CI" },
       { value: "5+ anos", label: "entregando software em produção" },
     ],
+    assistant: {
+      index: "IA",
+      title: "Chat do portfólio",
+      intro:
+        "Ferramentas locais respondem com dados do portfólio. Um Worker da Cloudflare pode enviar o mesmo contrato ao Groq.",
+      status: "MCP local · Groq depois",
+      placeholder: "Projetos, stack, experiência ou contato",
+      send: "Enviar",
+      reset: "Reiniciar chat",
+      userLabel: "Você",
+      assistantLabel: "Assistente",
+      toolLabel: "Rastro das ferramentas",
+      error:
+        "O endpoint remoto não respondeu, então usei as ferramentas locais do portfólio.",
+      empty: "Pergunte algo específico sobre o trabalho do Cristhion.",
+      suggestions: [
+        "Qual trabalho backend devo ver?",
+        "O que mudou na Minha Visita?",
+        "Como entro em contato?",
+      ],
+    },
     work: {
       index: "01",
       title: "Projetos selecionados",
@@ -412,6 +454,27 @@ export const translations: Record<Locale, Translation> = {
       { value: "59%", label: "de reducción en el tiempo de CI" },
       { value: "5+ años", label: "entregando software en producción" },
     ],
+    assistant: {
+      index: "IA",
+      title: "Chat del portfolio",
+      intro:
+        "Herramientas locales responden con datos del portfolio. Un Worker de Cloudflare puede enviar el mismo contrato a Groq.",
+      status: "MCP local · Groq luego",
+      placeholder: "Proyectos, stack, experiencia o contacto",
+      send: "Enviar",
+      reset: "Reiniciar chat",
+      userLabel: "Vos",
+      assistantLabel: "Asistente",
+      toolLabel: "Rastro de herramientas",
+      error:
+        "El endpoint remoto no respondió, así que usé las herramientas locales del portfolio.",
+      empty: "Preguntá algo específico sobre el trabajo de Cristhion.",
+      suggestions: [
+        "Qué trabajo backend debería mirar?",
+        "Qué cambió en Minha Visita?",
+        "Cómo contacto a Cristhion?",
+      ],
+    },
     work: {
       index: "01",
       title: "Proyectos seleccionados",

@@ -14,3 +14,14 @@ Run every project check:
 ```bash
 npm run check
 ```
+
+## Assistant Turnstile
+
+Set the public Turnstile site key when the chat Worker has
+`TURNSTILE_SECRET_KEY` configured:
+
+```bash
+VITE_TURNSTILE_SITE_KEY=0x...
+```
+
+If the variable is absent, the assistant skips the widget for local development.
